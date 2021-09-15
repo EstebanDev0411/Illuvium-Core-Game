@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.1;
+pragma solidity >=0.8.4;
 
 import "../utils/AddressUtils.sol";
 import "../utils/AccessControl.sol";
@@ -26,7 +26,7 @@ import "./ERC20Receiver.sol";
  *      possible total supply smart contract is able to track is 2^192 (close to 10^40 tokens)
  *
  * @dev Smart contract doesn't use safe math. All arithmetic operations are overflow/underflow safe.
- *      Additionally, Solidity 0.8.1 enforces overflow/underflow safety.
+ *      Additionally, Solidity >=0.8.4 enforces overflow/underflow safety.
  *
  * @dev ERC20: reviewed according to https://eips.ethereum.org/EIPS/eip-20
  *
